@@ -1,0 +1,15 @@
+{
+	"manifest_version": 2,
+	"name": "Dev or Staging",
+	"version": "1.0.0",
+	"description": "Shows a red alert message if the website is DEV or STAGING environment",
+	"content_scripts": [{
+		"css": ["style.css"],
+		"matches":[
+			// "*://*.dev/*", // deprecated 
+			"*://*.test/*"
+			"*://staging.WEBSITE.com/*",
+			"*://staging.WEBSITE.co.uk/*"
+		]
+	}]
+}

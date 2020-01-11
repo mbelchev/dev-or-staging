@@ -1,0 +1,14 @@
+body::before {
+    content: "!!! THIS IS A STAGING OR DEVELOPMENT ENVIRONMENT !!!";
+    background: rgba(255, 0, 0, 0.6);
+    position: fixed;
+    z-index: 9999999999999999999;
+    bottom: 0;
+    padding: 1px 0;
+    width: 100%;
+    color: #FFF;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    pointer-events: none;
+}
